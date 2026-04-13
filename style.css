@@ -7,28 +7,22 @@ html, body {
   margin: 0;
 }
 
-/* ================= BODY ================= */
+/* BODY */
 body {
   margin: 0;
   padding-top: 70px;
 
-  font-family: Bradley Hand ITC, Times New Roman;
+  font-family: "Times New Roman", Bradley Hand ITC;
   color: black;
 
-  background: transparent;
-  position: relative;
-  min-height: 100vh;
   overflow-x: hidden;
 }
 
-/* ================= ANIMATED BACKGROUND (FIXED LAYER) ================= */
+/* BACKGROUND */
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
 
   z-index: -1;
 
@@ -43,14 +37,13 @@ body::before {
   animation: gradientMove 10s ease infinite;
 }
 
-/* ================= ANIMATION ================= */
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* ================= NAVBAR ================= */
+/* NAV */
 nav {
   position: fixed;
   top: 0;
@@ -64,15 +57,15 @@ nav {
 
   background: #F7F2E1;
   z-index: 1000;
+  padding: 0 20px;
 }
 
+/* LINKS */
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-
   margin: 0;
-  padding: 0 20px;
 }
 
 nav a {
@@ -82,10 +75,10 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #2d6a4f;
 }
 
-/* ================= SECTIONS ================= */
+/* SECTIONS */
 section {
   min-height: 100vh;
 
@@ -95,38 +88,37 @@ section {
   align-items: center;
 
   text-align: center;
-
-  background: transparent;
-
   scroll-margin-top: 70px;
 }
 
-/* ================= BUTTONS ================= */
+/* BUTTONS */
 button,
 .profile-link {
-  display: inline-block;
-
   background: #F7F2E1;
   color: black;
 
   border: none;
   padding: 10px 20px;
-
   margin-top: 15px;
 
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
 
-  font-family: inherit;
   font-weight: bold;
   text-decoration: none;
+
+  transition: 0.3s;
 }
 
-/* ================= FORM ================= */
+button:hover,
+.profile-link:hover {
+  transform: scale(1.05);
+}
+
+/* FORM */
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
 }
 
@@ -138,19 +130,19 @@ input, textarea {
   border-radius: 5px;
 }
 
-/* ================= ANIMATION HELPERS ================= */
+/* ANIMATION */
 .hidden {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.8s ease;
 }
 
 .show {
   opacity: 1;
   transform: translateY(0);
+  transition: all 0.8s ease;
 }
 
-/* ================= ERROR ================= */
+/* ERROR */
 #error {
   color: red;
   margin-top: 10px;
