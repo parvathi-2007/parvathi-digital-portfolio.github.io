@@ -20,4 +20,15 @@ error.tetxtContent= " ";
 alert ("Form submitted Successfully!!");
 return true;
 }
+const hiddenElements = document.querySelectorAll(".hidden");
+
+window.addEventListener("scroll", () => {
+  hiddenElements.forEach(el => {
+    const elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < window.innerHeight - 50) {
+      el.classList.add("show");
+    }
+  });
+});
 
