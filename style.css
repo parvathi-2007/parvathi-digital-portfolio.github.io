@@ -7,7 +7,7 @@ html, body {
   margin: 0;
 }
 
-/* ================= NAV ================= */
+/* ================= NAVBAR ================= */
 nav {
   position: fixed;
   top: 0;
@@ -55,7 +55,7 @@ body {
   animation: gradientMove 10s ease infinite;
 }
 
-/* ================= BACKGROUND ANIMATION ================= */
+/* ================= ANIMATION ================= */
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -73,6 +73,8 @@ section {
 
   text-align: center;
 
+  padding-top: 70px;
+
   background: transparent;
   border-bottom: 1px solid #ddd;
 
@@ -80,16 +82,24 @@ section {
 }
 
 /* ================= BUTTONS ================= */
-button {
+button,
+.profile-link {
+  display: inline-block;
+
   background: #F7F2E1;
   color: black;
-  border: none;
 
+  border: none;
   padding: 10px 20px;
+
   margin-top: 15px;
 
   cursor: pointer;
   border-radius: 5px;
+
+  font-family: inherit;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* ================= FORM ================= */
@@ -124,22 +134,4 @@ input, textarea {
 #error {
   color: red;
   margin-top: 10px;
-}
-
-/* ================= PROFILE LINK ================= */
-.profile-link {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-
-  font-weight: bold;
-  background: #F7F2E1;
-  color: black;
-
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.profile-link:hover {
-  background: #ddd;
 }
