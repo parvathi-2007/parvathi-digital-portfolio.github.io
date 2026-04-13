@@ -6,6 +6,7 @@ html, body {
 }
 body{
 	margin:0;
+	padding-top: 70px;
 	font-family: Bradley Hand ITC , Times New Roman;
 	color: black;
 	background: linear-gradient(-45deg, #d8f3dc, #b7e4c7, #95d5b2, #cdeac0);
@@ -35,7 +36,7 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 	background: #F7F2E1;
-	padding: 10px 20px;
+	height: 70px
 	color: black;
 	z-index: 1000;
 }
@@ -60,7 +61,6 @@ nav a:hover{
 section{
 	height: 100vh;
 	background: transparent;
-	scroll-margin-top: 80px;
 	text-align: center;
 	border-bottom: 1px solid #ddd;
 
