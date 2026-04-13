@@ -52,6 +52,7 @@ body {
 
   background: linear-gradient(-45deg, #d8f3dc, #b7e4c7, #95d5b2, #cdeac0);
   background-size: 400% 400%;
+  background-attachment: fixed;   /* 🔥 FIX FOR YOUR ISSUE */
   animation: gradientMove 10s ease infinite;
 }
 
