@@ -52,6 +52,7 @@ nav a:hover{
 
 section{
 	height: 100vh;
+	background: transparent;
 	padding-top: 120px;
 	text-align: center;
 	scroll-margin-top: 120px;
