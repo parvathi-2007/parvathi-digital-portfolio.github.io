@@ -7,7 +7,7 @@ html, body {
   margin: 0;
 }
 
-/* FIXED NAV HEIGHT = 70px */
+/* NAV */
 nav {
   position: fixed;
   top: 0;
@@ -41,11 +41,7 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* BODY OFFSET FOR FIXED NAV */
+/* BODY */
 body {
   margin: 0;
   padding-top: 70px;
@@ -65,74 +61,13 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* SECTIONS */
+/* SECTIONS (IMPORTANT FIX REMOVED calc issue) */
 section {
-  height: calc(100vh - 70px); /* IMPORTANT FIX */
+  height: 100vh;
   padding-top: 20px;
   text-align: center;
   background: transparent;
   border-bottom: 1px solid #ddd;
 
-  scroll-margin-top: 70px; /* FIXS NAV OVERLAP */
-}
-
-/* BUTTON */
-button {
-  background: #F7F2E1;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  margin-top: 15px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* FORM */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-input, textarea {
-  width: 250px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* ANIMATION HELPERS */
-.hidden {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
-}
-
-.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ERROR */
-#error {
-  color: red;
-  margin-top: 10px;
-}
-
-/* PROFILE BUTTON */
-.profile-link {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-
-  font-weight: bold;
-  background: #F7F2E1;
-  color: black;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.profile-link:hover {
-  background: #ddd;
+  scroll-margin-top: 70px;
 }
