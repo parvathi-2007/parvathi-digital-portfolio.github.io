@@ -7,7 +7,7 @@ html, body {
   margin: 0;
 }
 
-/* NAV */
+/* ================= NAV ================= */
 nav {
   position: fixed;
   top: 0;
@@ -20,11 +20,9 @@ nav {
   align-items: center;
 
   background: #F7F2E1;
-  color: black;
   z-index: 1000;
 }
 
-/* NAV LIST */
 nav ul {
   list-style: none;
   display: flex;
@@ -34,14 +32,17 @@ nav ul {
   padding: 0 20px;
 }
 
-/* LINKS */
 nav a {
   color: black;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* BODY */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ================= BODY ================= */
 body {
   margin: 0;
   padding-top: 70px;
@@ -54,20 +55,91 @@ body {
   animation: gradientMove 10s ease infinite;
 }
 
-/* ANIMATION */
+/* ================= BACKGROUND ANIMATION ================= */
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* SECTIONS (IMPORTANT FIX REMOVED calc issue) */
+/* ================= SECTIONS ================= */
 section {
-  height: 100vh;
-  padding-top: 20px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   text-align: center;
+
   background: transparent;
   border-bottom: 1px solid #ddd;
 
   scroll-margin-top: 70px;
+}
+
+/* ================= BUTTONS ================= */
+button {
+  background: #F7F2E1;
+  color: black;
+  border: none;
+
+  padding: 10px 20px;
+  margin-top: 15px;
+
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* ================= FORM ================= */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input, textarea {
+  width: 250px;
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* ================= ANIMATIONS ================= */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= ERROR ================= */
+#error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* ================= PROFILE LINK ================= */
+.profile-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+
+  font-weight: bold;
+  background: #F7F2E1;
+  color: black;
+
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.profile-link:hover {
+  background: #ddd;
 }
