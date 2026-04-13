@@ -2,7 +2,7 @@ body{
 	margin:0;
 	font-family: Bradley Hand ITC , Times New Roman;
 	color: black;
-	background: linear-gradient(-45deg,  #d2ebc3, #a8d08d, #c3e0b4, #8fcf9a);
+	background: linear-gradient(-45deg, #d8f3dc, #b7e4c7, #95d5b2, #cdeac0);
   background-size: 400% 400%;
   animation: gradientMove 10s ease infinite;
 }
