@@ -2,7 +2,7 @@ body{
 	margin:0;
 	font-family: Bradley Hand ITC , Times New Roman;
 	color: black;
-	background: linear-gradient(-45deg, #D2EBC3, #BDE2A7, #C3E0B4);
+	background: linear-gradient(-45deg,  #d2ebc3, #a8d08d, #c3e0b4, #8fcf9a);
   background-size: 400% 400%;
   animation: gradientMove 10s ease infinite;
 }
@@ -92,7 +92,7 @@ input, textarea{
 
 .show{
 	opacity: 1;
-	tranform: translateY(0);
+	transform: translateY(0);
 }
 
 #error{
