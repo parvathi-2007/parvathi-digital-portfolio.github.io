@@ -1,5 +1,5 @@
 function showMessage() {
-  alert("Welcome to my portfolio!! 🚀");
+  alert("Welcome to my portfolio!! ");
 }
 
 // Improved email validation
